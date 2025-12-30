@@ -20,7 +20,16 @@ const html = `
             --primary: #2ecc71; --dark: #27ae60; --soil: #795548; --water: #29b6f6;
             --warning: #e74c3c; --text: #37474f; --bg: #f1f8e9;
         }
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; user-select: none; }
+         body { 
+               font-family: 'Segoe UI', Tahoma, sans-serif; 
+               
+               background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('https://wallpapers.com/images/high/vibrant-farm-fields-153x42spur474fsc.webp') no-repeat center center fixed;
+               background-size: cover;
+               color: var(--text); 
+               margin: 0; 
+               padding: 0; 
+               user-select: none; 
+           }
         
         /* HUD */
         .header { background: white; padding: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
@@ -138,9 +147,19 @@ const html = `
         <div style="font-size: 3em; margin-bottom: 10px;">🌏</div>
         <h2>Eco-Orchard: Advanced Biology</h2>
         <div class="intro-tags">
-            <div class="tag">COURSE: PRT2009</div>
-            <div class="tag">By Group 2</div>
+        <div class="tag">COURSE: PRT2009-11</div>
+        <div class="tag">By Group 2</div>
+    
+        <div class="how-to-play">
+            <b>How to Play</b><br>
+            1. <b>Plant & Rotate</b>: Choose seeds → click plot.<br>
+            2. <b>Soil N</b>: Fruit crops reduce N. Plant Long Beans (legumes).<br>
+            3. <b>Pests</b>: Red plot = aphids. Use Biological Control (ladybugs).<br>
+            4. <b>Harvest</b>: Click mature crops for Money & Eco-points.
         </div>
+    </div>
+    
+    
         <p style="color: #666; line-height: 1.6; margin: 20px 0;">
             Manage a sustainable agro-ecosystem. <br>
             Master <b>Crop Rotation</b>, <b>Nitrogen Fixation</b>, and <b>Integrated Pest Management (IPM)</b>.
