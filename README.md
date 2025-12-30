@@ -1,4 +1,5 @@
-<img width="1050" height="515" alt="image" src="https://github.com/user-attachments/assets/7e6e09d8-1166-44f2-a84f-9776d854c6f1" />
+<img width="998" height="560" alt="440" src="https://github.com/user-attachments/assets/be96a87d-3d4a-42ef-ae78-e2935ebb9fcf" />
+
 
 # 🌿 Eco-Orchard: Advanced Biology
 
