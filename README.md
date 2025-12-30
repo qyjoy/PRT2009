@@ -47,6 +47,11 @@ The game engine simulates real-world biological constraints:
 *   **Monoculture Penalty:** The system tracks plot history. Planting the same crop consecutively triggers a **30% yield reduction penalty**, simulating pathogen buildup and nutrient exhaustion.
 
 ---
+### How to play
+1.  **Plant & Rotate:** Select seeds from the *Biology Tab*. Click a plot to plant. **Avoid planting the same crop twice in a row** to prevent yield penalties.
+2.  **Monitor Soil N:** Soil fertility drops with fruit crops. Plant **Long Beans (Legumes)** to naturally fix nitrogen and restore soil health.
+3.  **Manage Pests:** If a plot turns red (Aphid attack), click it and select **Biological Control** (Ladybugs) to solve the problem without harming the environment.
+4.  **Harvest:** Click fully grown crops to earn Money and Eco-points.
 
 ## 🎯 Game Objectives
 
