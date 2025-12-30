@@ -204,7 +204,15 @@ const html = `
 <div class="toast" id="toast">Notification</div>
 
 <script>
-    // --- Biological Data ---
+const harvestSound = new Audio(
+  "https://cdn.pixabay.com/download/audio/2021/08/03/audio_7991a32b95.mp3?filename=collect-5930.mp3"
+);
+harvestSound.volume = 0.5;
+
+const plantSound = new Audio(
+  "https://cdn.pixabay.com/download/audio/2024/11/19/audio_839fd997e5.mp3?filename=hit-plant-03-266292.mp3"
+);
+plantSound.volume = 0.5;
     const CROPS = [
         // Cash Crops
         { id: 'papaya', name: 'Papaya', emoji: '🍈', price: 10, sell: 20, time: 3000, water: 10, soil: 8, eco: 1, type: 'fruit', desc: 'High Vit-C. Vulnerable to aphids.' },
@@ -319,7 +327,9 @@ const html = `
 
     function plantCrop(idx, cropId) {
         const crop = CROPS.find(c => c.id === cropId);
-        
+        plantSound.currentTime = 0;
+        plantSound.play();
+
         // Resource Checks
         if (state.money < crop.price) return showToast("Not enough money!");
         if (state.water < crop.water) return showToast("Water too low!");
@@ -353,6 +363,9 @@ const html = `
     }
 
     function harvestCrop(idx) {
+      harvestSound.currentTime = 0;
+      harvestSound.play();
+
         const plot = state.plots[idx];
         const crop = CROPS.find(c => c.id === plot.cropId);
 
